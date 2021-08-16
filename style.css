@@ -46,12 +46,11 @@ body {
 .stat-info {
   grid-area: stat-card-info;
   grid-column: 1/2;
-
+  padding-left: 4rem;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 .card-header {
@@ -84,6 +83,7 @@ body {
   width: 70%;
   height: 20%;
   margin-top: 1rem;
+  /* margin-left: -3rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,7 +91,7 @@ body {
 
 .footer-box {
   height: 63%;
-  text-align: center;
+  /* text-align: center; */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -146,7 +146,6 @@ body {
     width: 85%;
   }
 }
-
 
 @media screen and (max-width: 985px) {
   body {
