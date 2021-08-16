@@ -141,6 +141,13 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+@media screen and (max-width:1240px){
+  .container{
+    width: 85%;
+  }
+}
+
+
 @media screen and (max-width: 985px) {
   body {
     height: 120vh;
