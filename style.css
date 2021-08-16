@@ -51,6 +51,7 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
+  /* align-items: center; */
   flex-direction: column;
 }
 .card-header {
@@ -80,10 +81,9 @@ body {
 }
 
 .card-footer {
-  width: 70%;
+  width: 75%;
   height: 20%;
   margin-top: 1rem;
-  /* margin-left: -3rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,6 +145,11 @@ body {
   .container{
     width: 85%;
   }
+
+  .card-header{
+    font-size: 30px;
+
+  }
 }
 
 @media screen and (max-width: 985px) {
@@ -159,18 +164,24 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 4fr;
     grid-template-areas: " Stat-card-img stat-card-info";
+    
   }
 
   .stat-info {
     grid-area: Stat-card-info;
     grid-row: 2/3;
     text-align: center;
+    /* display: flex;
+    justify-content: center; */
+    align-items: center;
+    padding: 0;
+
   }
 
   .card-header {
     margin-top: 2.5rem;
-    margin-bottom: 1.5rem;
-    width: 90%;
+    margin-bottom: 1.8rem;
+    width: 85%;
     height: 20%;
   }
   .card-body {
@@ -182,7 +193,6 @@ body {
   .card-footer {
     width: 90%;
     height: 20%;
-    margin: auto;
   }
   .stat-image {
     grid-area: stat-card-img;
@@ -202,9 +212,9 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   body {
-    height: 150vh;
+    height: 160vh;
   }
 }
 
@@ -218,13 +228,15 @@ body {
   }
 
   .card-header {
+    width: 80%;
     font-size: 27px;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 
   .card-body {
-    width: 90%;
+    width: 80%;
     height: 20%;
+    margin-top:0.5rem;
   }
 
   .card-footer {
@@ -232,9 +244,10 @@ body {
     height: 45%;
     margin-left: 0 auto;
     flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-bottom: 2rem;
+    margin-left: 0rem;
+
   }
 
   .footer-box {
